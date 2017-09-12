@@ -1,0 +1,25 @@
+{
+    "name": "preprocesseur_client",
+    "version": "0.0.1",
+    "description": "Preproc client",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CyrilleRieau/preprocesseur_client.git"
+    },
+    "author": "Cyrille Rieau",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/CyrilleRieau/preprocesseur_client/issues"
+    },
+    "homepage": "https://github.com/CyrilleRieau/preprocesseur_client#readme",
+    "devDependencies": {
+        "ts-loader": "^2.3.7",
+        "typescript": "^2.5.2",
+        "webpack": "^3.5.6"
+    }
+}
