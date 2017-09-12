@@ -1,6 +1,7 @@
 module.exports = {
     entry: {
-        index: './index.ts'
+        index: './index.ts',
+        todo: './todo.ts'
     },
     output: {
         filename: './dist/[name].bundle.js',
