@@ -28,11 +28,26 @@ export class TodoAjax {
             }
         });
      };*/
-     getAllTodos():Promise<string[]>{
+    getAllTodos():Promise<string[]>{
          return $.ajax({
             url:this.urlApi,
         });
-     }
-    
+    }
+    addTodo(item:string):Promise<string[]>{
+        return $.ajax({
+           url:this.urlApi,
+           type : 'POST',
+           data : 'nouveau=' + item
+       });
+    }
+    deleteTodo(item:string):Promise<string[]>{
+        return $.ajax({
+           url:this.urlApi,
+           method : 'DELETE', 
+           contentType : 'application/json',
+           success :  (code_html, status)=>{
+               console.log(code_html);}   
+       });
+    }
     
 }
