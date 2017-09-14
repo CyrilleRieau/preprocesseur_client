@@ -12,6 +12,11 @@
 <body>
     <p id="para">Un paragraphe</p>
     <button id="increment">+</button>
+    <form action="http://localhost:3000/todo" method="POST">
+        <input type="text" name="nouveau"></input>
+        <input type="submit" value="Send"></input>
+    </form>
+    <ul id="todo"></ul>
 </body>
 <script src="./dist/index.bundle.js">
 </script>
